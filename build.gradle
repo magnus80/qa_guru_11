@@ -19,7 +19,6 @@ def
 
 dependencies {
     testImplementation("com.codeborne:selenide:$selenideVersion",
-            "com.github.tomakehurst:wiremock:2.27.2",
             "org.aspectj:aspectjweaver:1.9.6",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.assertj:assertj-core:3.17.1",
