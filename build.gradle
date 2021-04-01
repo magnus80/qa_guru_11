@@ -12,13 +12,13 @@ repositories {
     mavenCentral()
 }
 
-def
-        allureVersion = "2.13.8",
-        junitVersion = "5.7.0",
-        selenideVersion = "5.20.0"
+def allureVersion = "2.13.8",
+    junitVersion = "5.7.0",
+    selenideVersion = "5.20.0"
 
 dependencies {
-    testImplementation("com.codeborne:selenide:$selenideVersion",
+    testImplementation(
+            "com.codeborne:selenide:$selenideVersion",
             "org.aspectj:aspectjweaver:1.9.6",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.assertj:assertj-core:3.17.1",
@@ -45,7 +45,6 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
-
     systemProperties += System.properties
     System.setProperty("chromeoptions.prefs", "intl.accept_languages=en")
     if (System.getProperty("threads") != null) {
@@ -69,7 +68,6 @@ tasks.withType(Test) {
 
 test {
     useJUnitPlatform()
-    systemProperties(System.getProperties())
 }
 
 task web(type: Test) {
