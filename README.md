@@ -13,7 +13,7 @@ Java, JUnit5, Gradle, Selenide, Allure SE, Allure TestOps, Selenoid, Jenkins, In
 ## Screenshots:
 
 ### - Jenkins
-![image](https://yadi.sk/i/r6ycz4yCh4ffHQ)
+![image](https://disk.yandex.ru/i/r6ycz4yCh4ffHQ)
 ### - Allure SE
 ![image]()
 ![image]()
