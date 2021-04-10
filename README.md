@@ -25,7 +25,6 @@ Java, Gradle, Junit5, Selenide, Allure Report, Jenkins, Selenoid, Telegram Bot.
 * remote.driver.user (name user if required for available to selenoid/grid)
 * remote.driver.password (password user if required for available to selenoid/grid)
 * remote.browser.name (chrome, firefox)
-* video (boolean true or false)
 * threads (number of threads, default 2)
 
 > gradle clean -Dremote.driver.url= -Dthreads=
