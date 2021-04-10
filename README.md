@@ -1,3 +1,4 @@
+
 # qa_guru_11
 # Tests for https://www.awg.ru/
 
@@ -15,7 +16,7 @@ Java, JUnit5, Gradle, Selenide, Allure SE, Allure TestOps, Selenoid, Jenkins, In
 ### - Jenkins
 ![image](https://user-images.githubusercontent.com/17245384/114285208-11225c80-9a5e-11eb-873c-534ae98d3cf7.png)
 ### - Selenoid video
-![Watch the video](https://user-images.githubusercontent.com/17245384/114285257-85f59680-9a5e-11eb-8ac7-bf42f8bf5792.mp4)
+![watch the video](https://user-images.githubusercontent.com/17245384/114285343-192ecc00-9a5f-11eb-96ea-e7222559bad1.gif)
 ### - Allure SE
 ![image]()
 ![image]()
