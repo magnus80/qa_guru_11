@@ -1,18 +1,22 @@
 package tests;
 
 import com.codeborne.pdftest.PDF;
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 
 import java.io.File;
 
 import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.exactText;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
+import static org.openqa.selenium.By.className;
 
 @Tag("web")
 @Feature("MainPage tests")
@@ -65,5 +69,17 @@ class MainPageTests extends TestBase {
             assertThat(pdf).containsText("AWG - ведущий digital интегратор");
                 }
         );
+    }
+
+    @Test
+    @DisplayName("I can scroll")
+    @AllureId("2314")
+    void checkScroll() {
+        step("Open main page", () ->
+                open(""));
+        step("Click on a mouse button",()->
+            $(className("data-scroll-btn")).click());
+        step("Verify that data-scroll-content is visible",()->
+                $(className("data-scroll-content")).shouldBe(visible));
     }
 }
